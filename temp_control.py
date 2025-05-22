@@ -6,8 +6,6 @@ class FanSpeed:
     LOW = 20
     OFF = 0
 
-# --- The "System Under Test" (SUT) ---
-
 class TemperatureController:
     """
     Controls a fan's speed based on the current temperature.
@@ -37,7 +35,7 @@ class TemperatureController:
             self.fan_control.set_fan_speed(FanSpeed.OFF)
 
 
-# --- Example of Real (Non-Mocked) Dependencies ---
+
 
 class RealTemperatureSensor:
     """
