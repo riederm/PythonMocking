@@ -1,4 +1,5 @@
 import time
+import random
 
 class FanSpeed:
     HIGH = 100
@@ -44,7 +45,7 @@ class RealTemperatureSensor:
     def get_current_temperature(self):
         # In a real scenario, this would read from a sensor.
         # For demonstration, let's return a simulated value.
-        return 25.5 # Example temperature
+        return 25 + random.randint(-10, 20)  # Example temperature
 
 class RealFanControl:
     """
