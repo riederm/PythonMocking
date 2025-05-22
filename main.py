@@ -5,11 +5,9 @@ import time
 #example usage
 if __name__ == "__main__":
     # Create instances of the real dependencies
-    temperature_sensor = RealTemperatureSensor()
-    fan_control = RealFanControl()
-
+    
     # Create an instance of the TemperatureController with real dependencies
-    temp_controller = TemperatureController(temperature_sensor, fan_control)
+    temp_controller = TemperatureController()
 
     while True:
         # Regulate the fan speed based on the current temperature
